@@ -1,3 +1,5 @@
+/*ideia do mini projeto baseado no video https://www.youtube.com/watch?v=R8MyhCiqmHM&t=113s */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 * {
@@ -74,6 +76,7 @@ img {
 }
 
 .textField {
+    font-weight: 700;
     border: none;
     background: none;
     outline: none;
