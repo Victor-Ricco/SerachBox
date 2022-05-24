@@ -3,13 +3,13 @@
 * {
     margin: 0;
     padding: 0;
-    background: #23282b;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     height: 100vh;
+    background: #23282b;
 }
 
 #main {
@@ -21,18 +21,18 @@ body {
     margin: 10%;
 }
 
-a {
+.link {
     opacity: 60%;
-    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 50px;
     color: whitesmoke;
     text-shadow: 5px 5px #0c0e0f;
     text-decoration: none;
+    transition: 1s;
 }
 
-a:hover {
+.link:hover {
  opacity: 100%;
- transition: 1s;
 }
 
 img {
@@ -40,4 +40,64 @@ img {
     height: 100%;
     max-width: 500px;
     max-height: 500px;
+}
+
+/*Barra de pesquisa Lindja 0w0 */
+
+.searchBox {
+    background: whitesmoke;
+    height: 45px;
+    width: 43px;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 5px 5px #0c0e0f;
+    transition: 0.5s ease-in-out;
+}
+
+.searchIcon {
+    color: #E8B800;
+    float: right;
+    height: 45px;
+    width: 40px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.searchIcon i {
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.textField {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 15px;
+    line-height: 45px;
+    width: 0px;
+    color: #23282b;
+    transition: 0.5s ease-in-out;
+}
+
+.searchBox:hover {
+     width: 320px;
+}
+
+.searchBox:hover > .textField {
+    width: 250px;
+}
+
+.searchBox:hover > .searchIcon {
+    background: #E8B800;
+    color: #23282b;
+}
+
+.searchBox:hover > .searchIcon i {
+    font-size: 15px;
 }
